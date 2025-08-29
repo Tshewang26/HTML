@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        #tt {
+        width: 600px;
+        height: 200px;
+    }
+    #tt, th, td {
+        border-color: rgb(248, 90, 116);
+        border-collapse: collapse;
+    }
+    .wtd{
+        background-color: rgb(64, 239, 236);
+    }
+    .l{
+        background-color: rgb(111, 224, 111);
+    }
+    .p{
+        background: rgb(234, 120, 120);
+    }
+
+    </style>
+</head>
+<body>
+    <table border="2" id="tt">
+        <tr>  
+            <th >Days/Time</th>
+            <th>08:00-10:00</th>
+            <th>10:00-12:00</th>
+            <th>13:00-15:00</th>
+            <th>15:00-17:00</th>
+        </tr>
+        <tr>
+            <th>Monday</th>
+            <td class="wtd">WTD</td>
+            <td rowspan="5" class="ad">Active Directory</td>
+            <td colspan="2" rowspan="2" class="p">Python</td>
+        </tr>
+        <tr>
+            <th>Tuesday</th>
+            <td class="l">Linux</td>
+        </tr>
+        <tr>
+            <th>Wednesday</th>
+            <td class="p">python</td>
+            <td class="wtd">WTD</td>
+            <td class="l">Linux</td>
+        </tr>
+        <tr>
+            <th>Thuraday</th>
+            <td rowspan="2" class="wtd">WTD</td>
+            <td colspan="2" class="l">Linux</td>
+        </tr>
+        <tr>
+            <th>Firday</th>
+            <td class="wtd">WTD</td>
+            <td class="l">Linux</td>
+        </tr>
+    </table>
+</body>
+</html>
