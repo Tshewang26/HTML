@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Table</title>
+
+    <style>
+        table {
+            height: 100px;
+            width: 50%;
+            text-align: center;
+            border-color: red;
+            margin: auto;
+
+        }
+
+        table, th td {
+            border-collapse: collapse;
+        }
+
+        .head {
+            background-color: rgb(233, 238, 238);
+        }
+
+        #WTD {
+            background-color: rgb(140, 179, 218);
+        }
+        #AD {
+            background-color: beige;
+        }
+        #linux {
+            background-color: rgb(144, 233, 144);
+        }
+        #python {
+            background-color: rgb(241, 163, 163);
+        }
+
+        .title {
+            text-align: center;
+            font-style: italic;
+            font-weight: bold;
+            color: red;
+            font-size: larger;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="title">Time Table</div>
+
+    <br>
+
+    <table border="1">
+        <tr>
+            <th class="head">Days/Time</th>
+            <th class="head">08:00 - 10:00</th>
+            <th class="head">10:00 - 12:00</th>
+            <th class="head">13:00 - 15:00</th>
+            <th class="head">15:00 - 17:00</th>
+        </tr>
+        <tr>
+            <th class="head">Monday</th>
+            <td id="WTD">WTD</td>
+            <td rowspan="5" id="AD">Active Directory</td>
+            <td rowspan="2" colspan="2" id="python">Python</td>
+        </tr>
+        <tr>
+            <th class="head">Tuesday</th>
+            <td id="linux">Linux</td>
+        </tr>
+        <tr>
+            <th class="head">Wednesday</th>
+            <td id="python">Python</td>
+            <td id="WTD">WTD</td>
+            <td id="linux">Linux</td>
+        </tr>
+        <tr>
+            <th class="head">Thursday</th>
+            <td rowspan="2" id="WTD">WTD</td>
+            <td colspan="2" id="linux">Linux</td>
+        </tr>
+        <tr>
+            <th class="head">Friday</th>
+            <td id="WTD">WTD</td>
+            <td id="linux">Linux</td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -3,62 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Table</title>
+    <title>Time Table</title>
     <style>
-        #tt {
-        width: 600px;
-        height: 200px;
-    }
-    #tt, th, td {
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f0f8ff;
+            text-align:center;
+        }
+
+        h2{
+            color: #f30101;
+            text-align:center;
+            font-size: larger;
+            margin-bottom: 20px;
+            font-style: italic;
+            font-weight: bold;
+           
+        }
+        table{
+            width: 600px;
+            border-collapse:collapse;
+            background-color: white;
+            border-color: rgb(250, 53, 86);
+        }
+        th, td {
         border-color: rgb(248, 90, 116);
         border-collapse: collapse;
-    }
-    .wtd{
+         }
+        .wtd{
         background-color: rgb(64, 239, 236);
-    }
-    .l{
+        }
+        .linux{
         background-color: rgb(111, 224, 111);
-    }
-    .p{
+        }
+        .py{
         background: rgb(234, 120, 120);
-    }
+        }
+        .head{
+        background-color: rgb(181, 181, 181);
+        }
 
     </style>
 </head>
 <body>
-    <table border="2" id="tt">
+    <h2>Time Table</h2>
+
+    <table border="1.8">
         <tr>  
-            <th >Days/Time</th>
-            <th>08:00-10:00</th>
-            <th>10:00-12:00</th>
-            <th>13:00-15:00</th>
-            <th>15:00-17:00</th>
+            <th class="head">Days/Time</th>
+            <th class="head">08:00-10:00</th>
+            <th class="head">10:00-12:00</th>
+            <th class="head">13:00-15:00</th>
+            <th class="head">15:00-17:00</th>
         </tr>
         <tr>
-            <th>Monday</th>
+            <th class="head">Monday</th>
             <td class="wtd">WTD</td>
             <td rowspan="5" class="ad">Active Directory</td>
-            <td colspan="2" rowspan="2" class="p">Python</td>
+            <td colspan="2" rowspan="2" class="py">Python</td>
         </tr>
         <tr>
-            <th>Tuesday</th>
-            <td class="l">Linux</td>
+            <th class="head">Tuesday</th>
+            <td class="linux">Linux</td>
         </tr>
         <tr>
-            <th>Wednesday</th>
-            <td class="p">python</td>
+            <th class="head">Wednesday</th>
+            <td class="py">python</td>
             <td class="wtd">WTD</td>
-            <td class="l">Linux</td>
+            <td class="linux">Linux</td>
         </tr>
         <tr>
-            <th>Thuraday</th>
+            <th class="head">Thursday</th>
             <td rowspan="2" class="wtd">WTD</td>
-            <td colspan="2" class="l">Linux</td>
+            <td colspan="2" class="linux">Linux</td>
         </tr>
         <tr>
-            <th>Firday</th>
+            <th class="head">Friday</th>
             <td class="wtd">WTD</td>
-            <td class="l">Linux</td>
+            <td class="linux">Linux</td>
         </tr>
     </table>
 </body>
