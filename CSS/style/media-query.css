@@ -1,0 +1,34 @@
+*{
+    box-sizing: border-box;
+}
+/* body{
+    background-color: aqua;
+}
+@media only screen and (max-width:600px){
+    body{
+        background-color: blanchedalmond;
+    }
+}
+@media only screen and (max-width:600px) and (max-width:100px){
+    body{
+        background-color: rgb(255, 153, 0);
+    }
+}
+@media only screen and (orientation: landscape){
+    body{
+        background-color: rgb(255, 84, 84);
+    }
+} */
+
+@media only screen and (min-width:500px) and (max-width:700px){
+    body{
+        font-size: 10px;
+        color: green;
+    }
+}
+@media only screen and (min-width:700px){
+    body{
+        font-size: 20px;
+        color: rgb(20, 42, 210);
+    }
+}

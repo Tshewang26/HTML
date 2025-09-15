@@ -1,0 +1,77 @@
+.button {
+    background-color: pink;
+    border: 2px solid black;
+    border-radius: 10%;
+    color: white;
+}
+
+.button:hover{
+    background-color: aqua;
+    color:black;
+
+}
+#first-para::first-line {
+    font-style:italic;
+    font-size: 25px;
+    color: red;
+}
+
+#first-para::first-letter {
+    font-style:italic;
+    font-size: 40px;
+    color: blue;
+    font-weight: bold;
+}
+#first-para::selection {
+    color: red;
+    background: pink;
+}
+a[target]{
+    color:green;
+    font-size: 30px;
+    font-weight: bold;
+}
+a[target="_top"]{
+    color:orangered;
+    font-size: 50px;
+    font-weight: bolder;
+}
+.margin-div{
+    background-color: pink;
+}
+.margin-p{
+    background-color: aqua;
+    margin: 30px;
+    padding:50px;
+}
+.display-div{
+    background-color: pink;
+}
+.display-p{
+    background-color: rgb(233, 106, 127);
+    display:inline-block;
+    width: 500px;
+    height: 300px;
+
+}
+.display-a{
+    background-color: rgb(155, 223, 236);
+    display:block;
+    height: 200px;
+}
+.display-flex{
+    background-color: rgb(0, 133, 159);
+    display: flex;
+}
+.flex-p{
+    background-color: rgb(0, 133, 159);
+}
+.grid-div{
+    background-color: rgb(219, 162, 93);
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.grid-para{
+    background-color: rgb(230, 141, 33);
+    border: 1px solid black;
+}
