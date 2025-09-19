@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    <p id = "par_1"></p>
+    <p id = "par_2"></p>
+    <script>
+        // literal object declaration
+        const person1 = {
+            name:"Tshewang",
+             age:"20", 
+             phone: "17913862",
+             greeting: function() {
+                return this.name + " says hello!";
+
+             }
+            };
+        document.getElementById("par_1").innerHTML= person1.greeting();
+        const student ={
+            name:"choden",
+            student_Id:"05240157", 
+            course:"CSN",
+            courseInfo: function(){
+                return this.name + " is in", this.course
+            }
+        };
+        document.getElementById("par_2").innerHTML= student.courseInfo();
+    </script>
+</body>
+</html>

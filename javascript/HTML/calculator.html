@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+     <p id="cal"></p>
+    <button onclick="calculator()">Calculate</button>
+
+    <script>
+        function calculator(){
+            let x = prompt("Enter the first number");
+            let y = prompt("Enter the second number");
+            let sum = getSum(x, y);
+            document.getElementById("cal").innerHTML= x + " + " + y + " = " + sum;
+        }
+
+        function getSum(a,b) {
+            return Number(a) + Number(b);
+        }
+
+        // let greetings:function() {
+        //     return" Hello World";
+        // }
+
+        // let greetings = () => "Hello World";
+
+        // function findSum(a,b,c) {
+        //     return a+b+c;
+        // }
+
+        // let findSum = (a,b,c) => a+b+c;
+
+        // function fullName(fname, lname) {
+        //     document.getElementById("para1").innerHTML = fname+ "" + lname;
+        // }
+
+        // let fullname = (fname,lname) => document.getElementById()
+    </script>
+</body>
+</html>
